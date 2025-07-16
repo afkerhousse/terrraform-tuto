@@ -11,11 +11,3 @@ resource "aws_instance" "data_test_vm" {
     "sevdesk:confidentiality" = "public"
   }
 }
-
-resource "aws_s3_bucket" "state_bucket" {
- bucket = "state--891338049334--37i58x"
-
- tags = {
-   Name = "state--891338049334--37i58x"
- }
-}

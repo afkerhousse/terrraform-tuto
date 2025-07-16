@@ -6,3 +6,15 @@ terraform {
     }
   }
 }
+
+provider "aws" {
+  default_tags {
+    tags = {
+      "sevdesk:owner"           = "data-engineering",
+      "sevdesk:service"         = "terraformTuto",
+      "sevdesk:user-data"       = "false",
+      "sevdesk:criticality"     = "low",
+      "sevdesk:confidentiality" = "public"
+    }
+  }
+}
